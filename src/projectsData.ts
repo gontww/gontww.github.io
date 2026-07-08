@@ -40,7 +40,6 @@ export const projects: Project[] = [
       'Visualização Coroplética 2D & Extrusão 3D',
       'Integração Dinâmica com APIs do IBGE (SIDRA)',
       'Comparador Multidimensional com Gráfico de Radar',
-      'Deep Linking (Sincronização de estado via URL)',
       'Arquitetura de Features Modular e Escalável',
       'Caching Inteligente com TanStack Query'
     ],

@@ -79,7 +79,7 @@ export const Journey: React.FC = () => {
                 />
 
                 {/* Timeline card wrapper */}
-                <div className={`w-full md:w-[45%] pl-12 md:pl-0 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
+                <div className={`w-full md:w-[48%] pl-12 md:pl-0 ${isEven ? 'md:text-right' : 'md:text-left'}`}>
                   <motion.div
                     initial={{ opacity: 0, x: isEven ? -40 : 40 }}
                     whileInView={{ opacity: 1, x: 0 }}

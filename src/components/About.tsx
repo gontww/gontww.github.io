@@ -15,18 +15,32 @@ import {
 } from 'lucide-react';
 
 export const About: React.FC = () => {
+  const highlightStyles: Record<string, { hover: string; icon: string }> = {
+    default: {
+      hover: 'hover:border-purple-accent hover:bg-purple-accent/10 hover:shadow-[0_5px_15px_rgba(99,102,241,0.2)]',
+      icon:  'text-purple-accent',
+    },
+    purple: {
+      hover: 'hover:border-[#8b5cf6] hover:bg-[#8b5cf6]/10 hover:shadow-[0_5px_15px_rgba(139,92,246,0.25)]',
+      icon:  'text-[#8b5cf6]',
+    },
+    cyan: {
+      hover: 'hover:border-cyan-accent hover:bg-cyan-accent/10 hover:shadow-[0_5px_15px_rgba(6,182,212,0.25)]',
+      icon:  'text-cyan-accent',
+    },
+  };
+
   const skills = [
-    { name: 'Kotlin', icon: Code2, highlight: 'purple' },
     { name: 'Java', icon: Coffee, highlight: '' },
-    { name: 'TypeScript', icon: Braces, highlight: '' },
-    { name: 'Spring Boot', icon: Cpu, highlight: 'purple' },
+    { name: 'Kotlin', icon: Code2, highlight: 'purple' },
+    { name: 'Spring Boot', icon: Cpu, highlight: 'green' },
     { name: 'React', icon: Atom, highlight: '' },
     { name: 'Vue.js', icon: Layout, highlight: '' },
+    { name: 'TypeScript', icon: Braces, highlight: '' },
     { name: 'PostgreSQL', icon: Database, highlight: 'cyan' },
     { name: 'MySQL', icon: Database, highlight: 'cyan' },
     { name: 'Docker', icon: Container, highlight: '' },
-    { name: 'Git & GitHub', icon: GitBranch, highlight: '' },
-    { name: 'APIs RESTful', icon: Settings, highlight: '' },
+    { name: 'Git, CI & CD', icon: GitBranch, highlight: '' },
     { name: 'Linux (Bash)', icon: Terminal, highlight: '' },
   ];
 
@@ -95,22 +109,8 @@ export const About: React.FC = () => {
           >
             {skills.map((skill, index) => {
               const IconComponent = skill.icon;
-              const isPurple = skill.highlight === 'purple';
-              const isCyan = skill.highlight === 'cyan';
-              
-              let hoverClass = 'hover:border-purple-accent hover:bg-purple-accent/10 hover:shadow-[0_5px_15px_rgba(99,102,241,0.2)]';
-              if (isPurple) {
-                hoverClass = 'hover:border-[#8b5cf6] hover:bg-[#8b5cf6]/10 hover:shadow-[0_5px_15px_rgba(139,92,246,0.25)]';
-              } else if (isCyan) {
-                hoverClass = 'hover:border-cyan-accent hover:bg-cyan-accent/10 hover:shadow-[0_5px_15px_rgba(6,182,212,0.25)]';
-              }
-
-              let iconColorClass = 'text-purple-accent';
-              if (isPurple) {
-                iconColorClass = 'text-[#8b5cf6]';
-              } else if (isCyan) {
-                iconColorClass = 'text-cyan-accent';
-              }
+              const { hover: hoverClass, icon: iconColorClass } =
+                highlightStyles[skill.highlight] ?? highlightStyles.default;
               
               return (
                 <motion.div

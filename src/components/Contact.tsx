@@ -86,7 +86,7 @@ export const Contact: React.FC = () => {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/augusto-gontijo"
+            href="https://www.linkedin.com/in/augusto-gontijo-619325306/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-btn flex items-center justify-center gap-3 py-3 px-7 rounded-xl bg-card-bg border border-card-border text-text-main font-title font-semibold text-sm backdrop-blur-[8px] transition-all duration-300 hover:border-[#3b82f6] hover:bg-[#3b82f6]/10 hover:shadow-[0_8px_25px_rgba(59,130,246,0.25)] hover:text-[#3b82f6] hover:-translate-y-1"
