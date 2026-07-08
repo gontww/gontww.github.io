@@ -1,16 +1,32 @@
-# Augusto Gontijo — Portfólio
+# React + TypeScript + Vite
 
-Este é o repositório do meu portfólio pessoal e profissional.
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-## Recursos
-- **Design Moderno:** Interface escura e minimalista com estética *Glassmorphism*.
-- **Background Interativo:** Fundo de partículas e conexões dinâmicas renderizado em HTML5 Canvas.
-- **Animações Fluidas:** Efeitos de digitação no cabeçalho e transições ao rolar a página utilizando GSAP (GreenSock).
-- **Responsivo:** Layout adaptado para uma ótima experiência em celulares, tablets e desktops.
-- **Modularidade:** Folha de estilos organizada em submódulos CSS focados.
+Currently, two official plugins are available:
 
-## Tecnologias
-- HTML5 (Estrutura semântica)
-- CSS3 (Variáveis nativas e Grid/Flexbox)
-- JavaScript (Vanilla JS com manipulação de Canvas)
-- GSAP & ScrollTrigger (Mecanismo de animação)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the Oxlint configuration
+
+If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+
+```json
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": ["react", "typescript", "oxc"],
+  "options": {
+    "typeAware": true
+  },
+  "rules": {
+    "react/rules-of-hooks": "error",
+    "react/only-export-components": ["warn", { "allowConstantExport": true }]
+  }
+}
+```
+
+See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
