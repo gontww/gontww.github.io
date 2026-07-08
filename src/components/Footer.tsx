@@ -16,7 +16,7 @@ export const Footer: React.FC<FooterProps> = ({ scrollTo }) => {
           }}
           className="font-title font-extrabold text-lg text-text-main hover:text-cyan-accent transition-colors"
         >
-          gontww
+          gont
         </a>
         <p className="text-xs md:text-sm text-text-muted flex items-center gap-1.5 justify-center">
           Desenvolvido com <Heart className="w-4 h-4 text-red-500 fill-red-500 animate-pulse" /> por Augusto Gontijo &copy; {new Date().getFullYear()}

@@ -56,7 +56,7 @@ export const Header: React.FC<HeaderProps> = ({ activeSection, scrollTo }) => {
           className="font-title font-extrabold text-xl bg-gradient-to-r from-purple-accent to-cyan-accent bg-clip-text text-transparent flex items-center gap-2"
         >
           <Terminal className="text-purple-accent w-5 h-5" />
-          <span>gontww</span>
+          <span>gont</span>
         </a>
 
         {/* Desktop Menu */}
