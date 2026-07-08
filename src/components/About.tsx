@@ -68,10 +68,10 @@ export const About: React.FC = () => {
             Criando soluções de ponta a ponta com qualidade e eficiência.
           </h3>
           <p className="text-text-muted text-base md:text-lg leading-relaxed text-justify">
-            Sou estudante de <strong className="text-text-main font-semibold">Sistemas de Informação</strong> na Universidade Federal de Lavras (UFLA) e atuo como <strong className="text-text-main font-semibold">Desenvolvedor Full Stack na Youx Group</strong>. Tenho experiência prática no desenvolvimento de soluções web modernas, integrando front-ends responsivos a back-ends escaláveis.
+            Sou <strong className="text-text-main font-semibold">Desenvolvedor Full Stack na Youx Group</strong> e também estudante de <strong className="text-text-main font-semibold">Sistemas de Informação</strong> na Universidade Federal de Lavras (UFLA). Tenho experiência prática no desenvolvimento de soluções web modernas, integrando front-ends responsivos a back-ends escaláveis.
           </p>
           <p className="text-text-muted text-base md:text-lg leading-relaxed text-justify">
-            Busco sempre entregar código limpo, consistente e seguro. Possuo forte interesse em engenharia de software e inteligência artificial, além de certificação de proficiência em inglês nível <strong className="text-text-main font-semibold">C2 pelo EF SET</strong>, o que facilita minha atuação em ambientes e documentações internacionais.
+            Busco sempre entregar código limpo, consistente e seguro. Possuo forte interesse em engenharia de software e inteligência artificial, além de certificação de proficiência em inglês nível <strong className="text-text-main font-semibold">C2 pelo EF SET</strong>.
           </p>
         </motion.div>
 

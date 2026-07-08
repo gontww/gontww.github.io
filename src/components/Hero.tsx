@@ -8,9 +8,16 @@ interface HeroProps {
 
 export const Hero: React.FC<HeroProps> = ({ scrollTo }) => {
   const phrases = [
-    'Desenvolvedor Full Stack',
-    'Desenvolvedor Java & Kotlin',
-    'Desenvolvedor React & Vue',
+    'Java',
+    'Kotlin',
+    'React',
+    'Vue',
+    'Typescript',
+    'Node.js',
+    'Spring Boot',
+    'SQL',
+    'PostgreSQL',
+    'Python',
   ];
 
   return (

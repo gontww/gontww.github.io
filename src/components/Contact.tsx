@@ -35,7 +35,7 @@ export const Contact: React.FC = () => {
           transition={{ duration: 0.6 }}
           className="text-text-muted text-base md:text-lg leading-relaxed px-2"
         >
-          Fique à vontade para entrar em contato comigo para falar sobre oportunidades de desenvolvimento, projetos acadêmicos ou apenas bater um papo sobre programação e e-sports!
+          Fique à vontade para entrar em contato comigo para falar sobre oportunidades de desenvolvimento ou projetos acadêmicos!
         </motion.p>
 
         <motion.div
