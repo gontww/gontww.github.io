@@ -1,5 +1,3 @@
-import { Heart } from 'lucide-react';
-
 interface FooterProps {
   scrollTo: (id: string) => void;
 }
