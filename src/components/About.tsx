@@ -10,7 +10,6 @@ import {
   Database,
   Container,
   GitBranch,
-  Settings,
   Terminal,
 } from 'lucide-react';
 
