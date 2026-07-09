@@ -13,20 +13,20 @@ export interface Project {
 export const projects: Project[] = [
   {
     badge: 'Destaque Backend',
-    title: 'Kotlin CRUD com autenticação',
-    category: 'API RESTful de Alta Segurança',
-    github: 'https://github.com/gontww/kotlin-crud',
-    image: '/kotlin_crud_preview.png',
-    description: 'API RESTful robusta desenvolvida em Kotlin com Spring Boot, projetada para gerenciar operações CRUD completas com segurança aprimorada. O sistema utiliza autenticação e autorização centralizadas por tokens JWT (JSON Web Tokens), garantindo o controle granular do acesso a cada rota e recurso.',
+    title: 'DeOlho: Monitoramento de Exceções',
+    category: 'Fila de Eventos Assíncrona & Worker System',
+    github: 'https://github.com/gontww/deolho',
+    website: 'https://deolho.gont.com.br',
+    image: '/deolho_preview.gif',
+    description: 'Engine de monitoramento de exceções robusta e assíncrona desenvolvida com Java 21 e Spring Boot 3. Utiliza uma fila de alta performance baseada em Virtual Threads para processamento não-bloqueante de stacktraces e integra-se de forma agnóstica a provedores de IA (OpenAI, Gemini, Claude) e webhooks para notificação e diagnóstico instantâneo de erros.',
     features: [
-      'Autenticação e Autorização via JWT',
-      'Integração com PostgreSQL',
-      'Arquitetura limpa e desacoplada',
-      'Testes de Integração & Unitários',
-      'Tratamento Global de Exceções',
-      'Validação estrita de DTOs'
+      'Fila de Eventos Leve com Java 21 Virtual Threads',
+      'Diagnósticos Inteligentes com IA Multi-Provider (HTTP nativo)',
+      'Fila interna desacoplada gerenciada via QueueManager',
+      'SDK Cliente Plug-and-Play e Appender Logback customizado',
+      'Banco SQLite Local com Deploy via Docker'
     ],
-    stack: ['Kotlin', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Gradle', 'JUnit 5']
+    stack: ['Java 21', 'Spring Boot 3', 'SQLite', 'Docker', 'Maven']
   },
   {
     badge: 'Destaque Frontend',
@@ -44,5 +44,21 @@ export const projects: Project[] = [
       'Caching Inteligente com TanStack Query'
     ],
     stack: ['Vue 3', 'TypeScript', 'Mapbox GL JS', 'Apache ECharts', 'Pinia', 'Tailwind CSS', 'Vite']
+  },
+    {
+    title: 'Kotlin CRUD com autenticação',
+    category: 'API RESTful de Alta Segurança',
+    github: 'https://github.com/gontww/kotlin-crud',
+    image: '/kotlin_crud_preview.png',
+    description: 'API RESTful robusta desenvolvida em Kotlin com Spring Boot, projetada para gerenciar operações CRUD completas com segurança aprimorada. O sistema utiliza autenticação e autorização centralizadas por tokens JWT (JSON Web Tokens), garantindo o controle granular do acesso a cada rota e recurso.',
+    features: [
+      'Autenticação e Autorização via JWT',
+      'Integração com PostgreSQL',
+      'Arquitetura limpa e desacoplada',
+      'Testes de Integração & Unitários',
+      'Tratamento Global de Exceções',
+      'Validação estrita de DTOs'
+    ],
+    stack: ['Kotlin', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Gradle', 'JUnit 5']
   },
 ];
