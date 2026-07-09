@@ -9,16 +9,12 @@ interface ProjectCardProps {
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
-  const [isHovered, setIsHovered] = useState(false);
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.1 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
       className="project-card-glow relative group bg-gradient-to-br from-[#0d111e]/70 to-[#080a13]/80 border border-card-border rounded-[24px] p-6 md:p-8 backdrop-blur-[16px] shadow-[0_20px_50px_rgba(0,0,0,0.4)] flex flex-col justify-between h-full transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] hover:-translate-y-2 hover:shadow-[0_30px_60px_rgba(99,102,241,0.15)]"
     >
       <div>
