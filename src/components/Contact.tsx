@@ -50,11 +50,10 @@ export const Contact: React.FC = () => {
           </span>
           <button
             onClick={handleCopyEmail}
-            className={`py-2 px-5 rounded-[50px] font-title font-bold text-xs sm:text-sm cursor-pointer transition-all duration-300 w-full sm:w-auto ${
-              isCopied
+            className={`py-2 px-5 rounded-[50px] font-title font-bold text-xs sm:text-sm cursor-pointer transition-all duration-300 w-full sm:w-auto ${isCopied
                 ? 'bg-gradient-to-r from-[#10b981] to-[#059669] text-text-main shadow-[0_5px_15px_rgba(16,185,129,0.3)]'
                 : 'bg-gradient-to-r from-purple-accent to-[#4f46e5] text-text-main hover:scale-105 hover:shadow-[0_5px_15px_rgba(99,102,241,0.4)]'
-            }`}
+              }`}
           >
             {isCopied ? 'Copiado!' : 'Copiar E-mail'}
           </button>
@@ -86,7 +85,7 @@ export const Contact: React.FC = () => {
             GitHub
           </a>
           <a
-            href="https://www.linkedin.com/in/augusto-gontijo-619325306/"
+            href="https://www.linkedin.com/in/augusto-gont/"
             target="_blank"
             rel="noopener noreferrer"
             className="social-btn flex items-center justify-center gap-3 py-3 px-7 rounded-xl bg-card-bg border border-card-border text-text-main font-title font-semibold text-sm backdrop-blur-[8px] transition-all duration-300 hover:border-[#3b82f6] hover:bg-[#3b82f6]/10 hover:shadow-[0_8px_25px_rgba(59,130,246,0.25)] hover:text-[#3b82f6] hover:-translate-y-1"

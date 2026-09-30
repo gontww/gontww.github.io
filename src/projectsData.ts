@@ -13,20 +13,20 @@ export interface Project {
 export const projects: Project[] = [
   {
     badge: 'Destaque Backend',
-    title: 'DeOlho: Monitoramento de Exceções',
-    category: 'Fila de Eventos Assíncrona & Worker System',
-    github: 'https://github.com/gontww/deolho',
-    website: 'https://deolho.gont.com.br',
-    image: '/deolho_preview.gif',
-    description: 'Engine de monitoramento de exceções robusta e assíncrona desenvolvida com Java 21 e Spring Boot 3. Utiliza uma fila de alta performance baseada em Virtual Threads para processamento não-bloqueante de stacktraces e integra-se de forma agnóstica a provedores de IA (OpenAI, Gemini, Claude) e webhooks para notificação e diagnóstico instantâneo de erros.',
+    title: 'Kotlin CRUD com autenticação',
+    category: 'API RESTful de Alta Segurança',
+    github: 'https://github.com/gontww/kotlin-crud',
+    image: '/kotlin_crud_preview.png',
+    description: 'API RESTful robusta desenvolvida em Kotlin com Spring Boot, projetada para gerenciar operações CRUD completas com segurança aprimorada. O sistema utiliza autenticação e autorização centralizadas por tokens JWT (JSON Web Tokens), garantindo o controle granular do acesso a cada rota e recurso.',
     features: [
-      'Fila de Eventos Leve com Java 21 Virtual Threads',
-      'Diagnósticos Inteligentes com IA Multi-Provider (HTTP nativo)',
-      'Fila interna desacoplada gerenciada via QueueManager',
-      'SDK Cliente Plug-and-Play e Appender Logback customizado',
-      'Banco SQLite Local com Deploy via Docker'
+      'Autenticação e Autorização via JWT',
+      'Integração com PostgreSQL',
+      'Arquitetura limpa e desacoplada',
+      'Testes de Integração & Unitários',
+      'Tratamento Global de Exceções',
+      'Validação estrita de DTOs'
     ],
-    stack: ['Java 21', 'Spring Boot 3', 'SQLite', 'Docker', 'Maven']
+    stack: ['Kotlin', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Gradle', 'JUnit 5']
   },
   {
     badge: 'Destaque Frontend',
@@ -45,20 +45,18 @@ export const projects: Project[] = [
     ],
     stack: ['Vue 3', 'TypeScript', 'Mapbox GL JS', 'Apache ECharts', 'Pinia', 'Tailwind CSS', 'Vite']
   },
-    {
-    title: 'Kotlin CRUD com autenticação',
-    category: 'API RESTful de Alta Segurança',
-    github: 'https://github.com/gontww/kotlin-crud',
-    image: '/kotlin_crud_preview.png',
-    description: 'API RESTful robusta desenvolvida em Kotlin com Spring Boot, projetada para gerenciar operações CRUD completas com segurança aprimorada. O sistema utiliza autenticação e autorização centralizadas por tokens JWT (JSON Web Tokens), garantindo o controle granular do acesso a cada rota e recurso.',
+  {
+    badge: 'Banco de Dados',
+    title: 'Sistema de Pagamentos & Transações',
+    category: 'Estudo Transacional & Controle de Saldo',
+    github: 'https://github.com/gontww/sistema-pagamentos',
+    description: 'Sistema transacional focado em persistência consistente, operações financeiras e modelagem de regras de negócio em PostgreSQL. Implementa procedures, triggers e controle rigoroso de concorrência e integridade referencial.',
     features: [
-      'Autenticação e Autorização via JWT',
-      'Integração com PostgreSQL',
-      'Arquitetura limpa e desacoplada',
-      'Testes de Integração & Unitários',
-      'Tratamento Global de Exceções',
-      'Validação estrita de DTOs'
+      'Procedures e Triggers para automação de regras',
+      'Controle rigoroso de concorrência e transações ACID',
+      'Modelagem relacional otimizada e normalizada',
+      'Tratamento e prevenção de inconsistências de saldo'
     ],
-    stack: ['Kotlin', 'Spring Boot', 'Spring Security', 'JWT', 'PostgreSQL', 'Gradle', 'JUnit 5']
+    stack: ['PostgreSQL', 'PL/pgSQL', 'SQL']
   },
 ];

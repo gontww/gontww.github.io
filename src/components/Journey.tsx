@@ -15,7 +15,13 @@ export const Journey: React.FC = () => {
 
   const timelineItems = [
     {
-      date: 'abr de 2025 - Presente',
+      date: 'ago de 2026 - Presente',
+      title: 'Desenvolvedor Backend',
+      subtitle: 'TOTVS',
+      description: 'Atuação no desenvolvimento e sustentação de sistemas de conciliação e gestão financeira, com foco em alta integridade transacional, precisão de dados e arquitetura backend escalável.',
+    },
+    {
+      date: 'abr de 2025 - ago de 2026',
       title: 'Desenvolvedor Full Stack',
       subtitle: 'Youx Group',
       description: 'Desenvolvimento de soluções ponta a ponta com foco em qualidade e escalabilidade. Utilização de tecnologias do ecossistema Java/Spring Boot no backend, Vue.js/React no frontend e bancos de dados relacionais.',
@@ -31,12 +37,6 @@ export const Journey: React.FC = () => {
       title: 'Sistemas de Informação',
       subtitle: 'UFLA (Universidade Federal de Lavras)',
       description: 'Bacharelado acadêmico voltado para algoritmos, estrutura de dados, modelagem de banco de dados e gestão de projetos tecnológicos.',
-    },
-    {
-      date: '2021 - 2023',
-      title: 'E-sports Competitivo (Valorant)',
-      subtitle: 'Jogador de Equipe',
-      description: 'Vivência competitiva de alto nível que aprimorou competências comportamentais valiosas: comunicação clara em tempo real, resiliência sob pressão extrema e dedicação focada em metas de equipe.',
     },
   ];
 
@@ -61,9 +61,8 @@ export const Journey: React.FC = () => {
             return (
               <div
                 key={index}
-                className={`flex flex-col md:flex-row relative w-full ${
-                  isEven ? 'md:justify-start' : 'md:justify-end'
-                }`}
+                className={`flex flex-col md:flex-row relative w-full ${isEven ? 'md:justify-start' : 'md:justify-end'
+                  }`}
               >
                 {/* Timeline dot */}
                 <motion.div

@@ -17,7 +17,6 @@ export const Hero: React.FC<HeroProps> = ({ scrollTo }) => {
     'Spring Boot',
     'SQL',
     'PostgreSQL',
-    'Python',
   ];
 
   return (
@@ -93,10 +92,10 @@ export const Hero: React.FC<HeroProps> = ({ scrollTo }) => {
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 1.6, ease: 'easeInOut' }}
       >
-      <span className="w-6 h-10 border-2 border-text-muted rounded-xl relative flex justify-center">
-        <span className="w-1 h-2 bg-purple-accent rounded-full absolute top-2 animate-[scroll-wheel_1.6s_infinite]" />
-      </span>
-      <span>Rolar</span>
+        <span className="w-6 h-10 border-2 border-text-muted rounded-xl relative flex justify-center">
+          <span className="w-1 h-2 bg-purple-accent rounded-full absolute top-2 animate-[scroll-wheel_1.6s_infinite]" />
+        </span>
+        <span>Rolar</span>
       </motion.a>
     </section>
   );

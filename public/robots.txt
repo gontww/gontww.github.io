@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://www.gont.com.br/sitemap.xml
+Sitemap: https://gontww.github.io/sitemap.xml

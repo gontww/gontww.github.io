@@ -81,7 +81,7 @@ export const About: React.FC = () => {
             Criando soluções de ponta a ponta com qualidade e eficiência.
           </h3>
           <p className="text-text-muted text-base md:text-lg leading-relaxed text-justify">
-            Sou <strong className="text-text-main font-semibold">Desenvolvedor Full Stack na Youx Group</strong> e também estudante de <strong className="text-text-main font-semibold">Sistemas de Informação</strong> na Universidade Federal de Lavras (UFLA). Tenho experiência prática no desenvolvimento de soluções web modernas, integrando front-ends responsivos a back-ends escaláveis.
+            Atualmente sou <strong className="text-text-main font-semibold">Desenvolvedor Backend na TOTVS</strong>, atuando em soluções de conciliação e gestão financeira, e estudante de <strong className="text-text-main font-semibold">Sistemas de Informação</strong> na Universidade Federal de Lavras (UFLA). Tenho experiência prática na criação de soluções robustas e escaláveis, unindo boas práticas de arquitetura a microsserviços e APIs de alta performance.
           </p>
           <p className="text-text-muted text-base md:text-lg leading-relaxed text-justify">
             Busco sempre entregar código limpo, consistente e seguro. Possuo forte interesse em engenharia de software e inteligência artificial, além de certificação de proficiência em inglês nível <strong className="text-text-main font-semibold">C2 pelo EF SET</strong>.

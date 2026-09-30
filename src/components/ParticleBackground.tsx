@@ -14,15 +14,15 @@ export const ParticleBackground: React.FC = () => {
     let particles: Particle[] = [];
     
     const getParticleCount = () => {
-      return window.innerWidth < 768 ? 40 : 100;
+      return window.innerWidth < 768 ? 25 : 50;
     };
 
     let particleCount = getParticleCount();
-    const connectionDistance = 120;
+    const connectionDistance = 115;
     const mouse: { x: number | null; y: number | null; radius: number } = {
       x: null,
       y: null,
-      radius: 150,
+      radius: 140,
     };
 
     class Particle {
@@ -38,8 +38,8 @@ export const ParticleBackground: React.FC = () => {
         this.y = Math.random() * canvas!.height;
         this.vx = (Math.random() - 0.5) * 0.7;
         this.vy = (Math.random() - 0.5) * 0.7;
-        this.radius = Math.random() * 2.5 + 1.5;
-        this.color = Math.random() > 0.5 ? 'rgba(99, 102, 241, 0.75)' : 'rgba(6, 182, 212, 0.75)';
+        this.radius = Math.random() * 2 + 1.5;
+        this.color = Math.random() > 0.5 ? 'rgba(99, 102, 241, 0.85)' : 'rgba(6, 182, 212, 0.85)';
       }
 
       update() {
